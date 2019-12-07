@@ -1,0 +1,46 @@
+ol.lightbox {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+ol.lightbox li {
+    display: block;
+    cursor: pointer;
+}
+
+.lightbox img {
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+
+#lightbox-overlay img {
+    max-width: 100%;
+    width: auto;
+}
+
+#lightbox-overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* display:block; */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.lb-nav {
+    font-size: 5vh;
+    margin: 0;
+    min-width: 10vw;
+}
+
+.lb-go-forward {
+    float: right;
+}

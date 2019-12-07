@@ -1,0 +1,34 @@
+.accordion {
+    display: block;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.accordion ol {
+    display: none;
+}
+
+.accordion li.active ol {
+    display: block;
+    padding-inline-start: 0;
+    background-color: white;
+}
+
+.accordion li.active>a~* {
+    display: initial;
+}
+
+.accordion li>a~* {
+    display: none;
+}
+
+.accordion li {
+    list-style-type: none;
+    /*min-height: 40px;*/
+}
+
+.accordion li>a {
+    display: block;
+    background-color: silver;
+    padding: 10px;
+}
